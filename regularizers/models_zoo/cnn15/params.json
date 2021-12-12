@@ -1,0 +1,25 @@
+{
+  "noise_std": [0.05, 0.30],
+  "act": "ReLU",
+  "conv_params": [
+[3, 128, 3, 1], 
+[128, 64, 3, 1], 
+[64, 64, 3, 3], 
+[64, 64, 3, 1], 
+[64, 32, 1, 1],
+[32, 32, 1, 1]
+],
+  "loss": "WGAN",
+  "batch_size": 32,
+  "patch_size": 15,
+  "model": "CNN",
+  "optim": "adam",
+  "learning_rate": 0.001,
+  "lr_decay": 0.0001,
+  "epochs": 100,
+  "mu": 5,
+  "gamma": 0,
+  "checkpoint_step": 5,
+  "val_epoch": 10,
+  "log_step": 1
+}
